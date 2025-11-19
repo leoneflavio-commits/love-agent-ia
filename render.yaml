@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: love-agent-ia
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot_render.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: "8040156850:AAEzyPxxlMTT7YD390EBejnf3U87V9iWgXA"
